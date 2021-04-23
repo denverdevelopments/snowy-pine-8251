@@ -17,7 +17,7 @@ RSpec.describe 'flight index page' do
     @flight_2.passengers << @passenger_2, @passenger_4
 
     @airline_2 = Airline.create!(name: "Delta")
-    @flight_3 = @airline_2.flights.create!(number: “1727”, date: "08/03/20", departure_city: "Denver", arrival_city: "Reno")
+    @flight_3 = @airline_2.flights.create!(number: “4321”, date: "08/03/20", departure_city: "Denver", arrival_city: "Reno")
     @passenger_6 = Passenger.create!(name: "Bill", age: 19)
     @passenger_7 = Passenger.create!(name: "Jan", age: 35)
     @passenger_8 = Passenger.create!(name: "Doris", age: 11)

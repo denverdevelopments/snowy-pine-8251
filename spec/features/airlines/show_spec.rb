@@ -6,15 +6,13 @@ RSpec.describe 'airline show page' do
   end
 
   it 'lists passengers that have flights on that airline' do
+    it 'list of airline passengers is unique' do
 
-  end
+    end
 
-  it 'list of airline passengers is unique' do
+    it 'lists only airline Adult passengers whose age is >= 18' do
 
-  end
-
-  it 'lists only airline Adult passengers whose age is >= 18' do
-
+    end
   end
 
 end
