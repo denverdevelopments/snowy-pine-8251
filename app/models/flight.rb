@@ -3,9 +3,9 @@ class Flight < ApplicationRecord
   has_many :passenger_flights
   has_many :passengers, through: :passenger_flights, dependent: :destroy
 
-  def passengers_screened
-    #self.joins(:passengers)
-          # .where(passengers: {age: >= 18})
-          # .distinct
-  end
+  # def passengers_screened
+  #   self.joins(:passengers)
+  #       .where(passengers: {age: >= 18})
+  #       .distinct
+  # end
 end
