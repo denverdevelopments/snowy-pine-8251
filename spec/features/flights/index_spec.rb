@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe 'airline show page' do
+  before(:each)do
+
+  end
+
   it 'lists passengers that have flights on that airline' do
 
   end
