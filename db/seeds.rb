@@ -25,7 +25,7 @@ Airline.destroy_all
 
 @flight_2 = @airline_1.flights.create!(number: "3125", date: "11/23/20", departure_city: "Phoenix", arrival_city: "Fargo")
 
-@flight_2.passengers << @passenger_2
+@flight_2.passengers << @passenger_2; @passenger_4
 @flight_2.passengers << @passenger_4
 
 @airline_2 = Airline.create!(name: "Delta")
