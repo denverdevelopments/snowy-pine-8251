@@ -21,16 +21,13 @@ RSpec.describe 'airline show page' do
   @flight_2.passengers << @passenger_4
   end
 
-  it 'lists passengers that have flights on that airline' do
-
+  it 'lists passengers on airline-s flights, unique & age >= 18' do
     visit "/airlines/#{@airline_1.id}"
 
     expect(page).to have_content("#{@passenger_1.name}")
-    expect(page).to have_content("#{@passenger_3.name}")
+    expect(page).to have_content("#{@passenger_2.name}")
     expect(page).to have_content("#{@passenger_5.name}")
+    expect(page).to_not have_content("#{@passenger_3.name}")
+    expect(page).to_not have_content("#{@passenger_4.name}")
   end
-
-  it 'list of airline passengers is unique & age >= 18' do
-  end
-
 end
